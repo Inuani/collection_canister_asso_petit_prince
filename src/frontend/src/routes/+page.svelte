@@ -1,7 +1,9 @@
 <script lang="ts">
 	 	import { ic } from '../stores/ic';
 		import '../app.css';
-		import Navi from '../components/navi.svelte';
+		import Header from '../components/header.svelte';
+		import Collection from '../components/collection.svelte';
+		import Footer from '../components/footer.svelte';
 
 	let input = '', greeting = '', loading = false;
 
@@ -11,7 +13,7 @@
 		try {
 			// Call the IC
 			greeting = await $ic.actor.sayHelloTo(input);
-			loading = false;
+			loading = false;	
 
 		} catch (err: unknown) {
 			console.error(err);
@@ -20,9 +22,11 @@
 </script>
 
 <main>
-	<Navi />
+	<Header />
+	<Collection />
+	<Footer />
 
-	<img src="icAcademy.png" alt="IcAcademy logo" />
+	<!-- <img src="icAcademy.png" alt="IcAcademy logo" />
 	<h1>My Demo App</h1>
 
 	<div id="info">
@@ -40,17 +44,17 @@
 		</form>
 
 		<div id="greeting"> {greeting} </div>
-	</div>
+	</div> -->
 </main>
 
 <style>
-	form input {
+	 form input { 
 		width: 50%;
 		padding: 0.5rem;
 		margin: 0.5rem 0;
 		border: 1px solid #ccc;
 		border-radius: 5px;
-	}
+	} 
 	#greeting {
 		width: 100%;
 		min-height: 20px;
@@ -58,7 +62,7 @@
 		padding: 0.5rem;
 		margin: 0.5rem 0;
 	}
-	#info {
+	 #info {
 		max-width: 100%;
 		margin: 10px auto;
 		padding: 20px;

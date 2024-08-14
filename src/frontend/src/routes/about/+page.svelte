@@ -1,8 +1,6 @@
 <script>
-  import Navi from '../../components/navi.svelte';
 </script>
 <main>
-  <Navi />
   <h1>About</h1>
   <div>
     Display a normal Svelte page here.

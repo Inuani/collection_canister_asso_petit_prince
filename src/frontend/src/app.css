@@ -1,13 +1,8 @@
 main {
   font-family: sans-serif;
-  max-width: 1024px;
+  /* max-width: 1024px; */
 }
 
-img {
-  max-width: 150px;
-  display: block;
-  margin: auto;
-}
 
 form {
   display: flex;
