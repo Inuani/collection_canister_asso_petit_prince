@@ -17,5 +17,5 @@
 </style>
 
 <footer>
-  <p>Part of <a href="https://raygen.io" target="_blank">raygen.io</a> project</p>
+  <p>Part of <a href="https://www.instagram.com/raygen.io" target="_blank">raygen.io</a> project</p>
 </footer>
